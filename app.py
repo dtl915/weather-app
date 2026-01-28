@@ -10,7 +10,7 @@ from sqlalchemy.ext.declarative import declarative_base
 app = Flask(__name__)
 
 # Database connection configuration
-DATABASE_URL = "mysql+pymysql://root:ddxdd123@localhost:3306/weather_db?charset=utf8mb4"
+DATABASE_URL = "mysql+pymysql://root:PASSWORD@localhost:3306/weather_db?charset=utf8mb4"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(bind=engine)
 session = SessionLocal()
